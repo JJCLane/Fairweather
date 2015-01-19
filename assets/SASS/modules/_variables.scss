@@ -1,0 +1,43 @@
+/* COLOURS - http://chir.ag/projects/name-that-color/
+------------------------------------------ */
+
+$col-white: #ffffff;
+$col-alabaster: #fafafa;
+$col-alto: #dbd9d9;
+$col-fuscous-gray: #545041;
+
+$col-standard: $col-alto;
+$col-link: $col-alto;
+$col-link-hover: $col-alto;
+
+//Header
+$col-header-bg: $col-alabaster;
+$col-header-border: $col-alto;
+
+// Nav
+$col-nav-bg: $col-white;
+$col-nav-border: $col-alto;
+$col-nav-link: $col-fuscous-gray;
+
+
+/* WEIGHTS
+------------------------------------------ */
+
+$weight-light: 100;
+$weight-regular: 400;
+$weight-bold: 600;
+
+
+/* BASE FONTS
+------------------------------------------ */
+
+$base-font-family: 'Neuton', serif;;
+$base-font-weight: $weight-regular;
+$base-font-size: 1em;
+$base-line-height: 1.4;
+
+
+/* HEADER FONTS
+------------------------------------------ */
+
+$header-font-family: 'Montserrat', sans-serif;

@@ -1,0 +1,30 @@
+.header {
+	background-color: $col-header-bg;
+	border: 1px solid $col-header-border;
+	padding-bottom: 55px;
+	&__nav {
+		background-color: $col-nav-bg;
+		border: 1px solid $col-nav-border;
+		border-top-width: 0;
+		margin: 0 auto 20px auto;
+		padding: 11px 62px;
+		width: 542px;
+		a {
+			color: $col-nav-link;
+			display: inline-block;
+			font-family: $header-font-family;
+			font-size: 0.9em;
+			padding: 15px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__img {
+		&--logo {
+			position: absolute;
+			right: 0;
+			transform: translateY(-50%);
+			top: 50%;
+		}
+	}
+}
