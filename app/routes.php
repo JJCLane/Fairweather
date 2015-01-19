@@ -17,10 +17,8 @@ Route::get('/', function()
 {
 	
 	$facebookRepository = App::make('Fairweather\Repositories\FacebookRepository');
-	$photos = $facebookRepository->getPagePhotos();
 
-	foreach ($photos->getPropertyAsArray('data') as $photo) {
-		echo '<img src="' . $photo->getproperty('source') . '" />';
-	}
-	//return View::make('hello');
+	$data = array();
+	$data['photos'] = $facebookRepository->getPagePhotos();
+	return View::make('home', $data);
 });
