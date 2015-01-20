@@ -1,0 +1,21 @@
+.section {
+	&--services {
+		background-color: $col-section-services;
+	}
+	&__title {
+		margin-top: 2em;
+		@include breakpoint(medium) {
+			margin-top: 4em;
+		}
+	}
+	&__subhead {
+		margin-top: 1.8em;
+		text-align: center;
+		@include breakpoint(large) {
+			margin-left: auto;
+			margin-right: auto;
+			width: 78%;
+		}
+		
+	}
+}

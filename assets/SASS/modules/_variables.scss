@@ -5,8 +5,11 @@ $col-white: #ffffff;
 $col-alabaster: #fafafa;
 $col-alto: #dbd9d9;
 $col-fuscous-gray: #545041;
+$col-dove-gray: #636363;
+$col-mine-shaft: #333333;
 
-$col-standard: $col-alto;
+$col-standard: $col-mine-shaft;
+$col-heading: $col-dove-gray;
 $col-link: $col-alto;
 $col-link-hover: $col-alto;
 
@@ -18,6 +21,9 @@ $col-header-border: $col-alto;
 $col-nav-bg: $col-white;
 $col-nav-border: $col-alto;
 $col-nav-link: $col-fuscous-gray;
+
+// Sections
+$col-section-services: $col-alabaster;
 
 
 /* WEIGHTS

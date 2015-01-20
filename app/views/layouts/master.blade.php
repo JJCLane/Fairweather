@@ -38,19 +38,71 @@
 
 				<img class="header__img header__img--leaf" src="/img/leaf-background.jpg" alt="The leaf part of the logo with image of forest" width="469" height="536"/>
 
-				<img class="header__img header__img--logo" src="/img/fairweather-logo.png" alt="Fairweather Garden Services logo" width="403" height="536"/>
+				<img class="header__img header__img--logo" src="/img/fairweather-logo.png" alt="Fairweather Garden Services logo" width="403" height="187"/>
 			</div>
 		</div>
 	</header>
 
-	<section>
+	<section class="section section--info">
 		<div class="container">
 			
-			<h2>Info</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, nunc ut tincidunt fermentum, est leo accumsan risus, ut aliquam eros justo eget est. Quisque dui est, imperdiet iaculis interdum ut, posuere at purus. Suspendisse potenti. Etiam in vestibulum erat. Vivamus tristique orci et quam pharetra fringilla. </p>
+			<h2 class="section__title">Info</h2>
+			<p class="section__subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, nunc ut tincidunt fermentum, est leo accumsan risus, ut aliquam eros justo eget est. Quisque dui est, imperdiet iaculis interdum ut, posuere at purus. Suspendisse potenti. Etiam in vestibulum erat. Vivamus tristique orci et quam pharetra fringilla. </p>
 			<img src="http://lorempixel.com/200/200" />
 			<img src="http://lorempixel.com/200/200" />
 			<img src="http://lorempixel.com/200/200" />
+		</div>
+	</section>
+
+	<section class="section section--services">
+		<div class="container">
+			
+			<h2 class="section__title">Services</h2>
+			
+			<div class="list-box">
+				<h3 class="list-box__title">Spring Services</h3>
+				<ul class="list-box__items">
+					<li>Mowing</li>
+					<li>Shingled areas</li>
+					<li>Gutter clearance</li>
+					<li>Hedge cutting</li>
+					<li>Strimming</li>
+					<li>Patio washing</li>
+					<li>Tree surgery</li>
+					<li>Turfing</li>
+					<li>Mowing</li>
+					<li>Shingled areas</li>
+					<li>Gutter clearance</li>
+					<li>Hedge cutting</li>
+					<li>Strimming</li>
+					<li>Patio washing</li>
+					<li>Tree surgery</li>
+					<li>Turfing</li>
+				</ul>
+			</div>
+
+			<div class="list-box">
+				<h3 class="list-box__title">Spring Services</h3>
+				<ul class="list-box__items">
+					<li>Mowing</li>
+					<li>Shingled areas</li>
+					<li>Gutter clearance</li>
+					<li>Hedge cutting</li>
+					<li>Strimming</li>
+					<li>Patio washing</li>
+					<li>Tree surgery</li>
+					<li>Turfing</li>
+					<li>Mowing</li>
+					<li>Shingled areas</li>
+					<li>Gutter clearance</li>
+					<li>Hedge cutting</li>
+					<li>Strimming</li>
+					<li>Patio washing</li>
+					<li>Tree surgery</li>
+					<li>Turfing</li>
+				</ul>
+			</div>
+
 		</div>
 	</section>
 
