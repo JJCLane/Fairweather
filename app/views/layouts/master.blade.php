@@ -34,11 +34,13 @@
 				--><a href="#contact">Contact</a>
 			</nav>
 
-			<div class="wrapper">
-
-				<img class="header__img header__img--leaf" src="/img/leaf-background.jpg" alt="The leaf part of the logo with image of forest" width="469" height="536"/>
-
-				<img class="header__img header__img--logo" src="/img/fairweather-logo.png" alt="Fairweather Garden Services logo" width="403" height="187"/>
+			<div class="wrapper row">
+				<div class="half-column half-column--left">
+					<img class="header__img header__img--leaf" src="/img/leaf-background.jpg" alt="The leaf part of the logo with image of forest" width="469" height="536"/>
+				</div>
+				<div class="half-column half-column--right">
+					<img class="header__img header__img--logo" src="/img/fairweather-logo.png" alt="Fairweather Garden Services logo" width="403" height="187"/>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -59,7 +61,7 @@
 			
 			<h2 class="section__title">Services</h2>
 			
-			<div class="list-box">
+			<div class="list-box list-box--spring">
 				<h3 class="list-box__title">Spring Services</h3>
 				<ul class="list-box__items">
 					<li>Mowing</li>
@@ -81,7 +83,7 @@
 				</ul>
 			</div>
 
-			<div class="list-box">
+			<div class="list-box list-box--summer">
 				<h3 class="list-box__title">Spring Services</h3>
 				<ul class="list-box__items">
 					<li>Mowing</li>

@@ -20,11 +20,52 @@
 	}
 
 	&__img {
+		&--leaf {
+			@include breakpoint(medium) {
+				
+			}
+			@include breakpoint(65em) {
+				width: auto;
+			}
+		}
 		&--logo {
-			position: absolute;
+			/*position: absolute;
 			right: 0;
 			transform: translateY(-50%);
-			top: 50%;
+			top: 50%;*/
+			padding-top: 27%;
+			padding-bottom: 31%;
+			@include breakpoint(25em) {
+				max-width: 325px;
+				padding-top: 88px;
+				padding-bottom: 100px;
+			}
+			@include breakpoint(medium) {
+				max-width: 100%;
+				padding-top: 33%;
+				padding-bottom: 0;
+			}
+		}
+	}
+	.wrapper {
+		background-image: url('/img/leaf-background-grey.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		@include breakpoint(medium) {
+			background: none;
+		}
+	}
+	.half-column--left {
+		display: none;
+		@include breakpoint(medium) {
+			display: block;
+		}
+	}
+	.half-column--right {
+		text-align: center;
+		@include breakpoint(medium) {
+			text-align: right;
 		}
 	}
 }

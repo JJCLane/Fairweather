@@ -1,5 +1,22 @@
 @import "susy";
 
+.half-column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	&--right {
+		text-align: right;
+	}
+	&--left {
+		text-align: right;
+	}
+	@include breakpoint(medium) {
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 50%;
+	}
+}
 
 /* SMALL/DEFAULT
 ------------------------------------------ */

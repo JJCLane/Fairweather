@@ -11,12 +11,17 @@ html {
 }
 
 body {
-	border: 24px solid #564334;
+	border-top: 24px solid #564334;
+	border-bottom: 24px solid #564334;
 	color: $col-standard;
 	font-family: $base-font-family;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
-	margin: 0;	
+	margin: 0;
+	@include breakpoint(medium) {
+		border: 24px solid #564334;
+	}
+
 }
 
 .container {
