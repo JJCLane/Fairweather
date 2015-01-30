@@ -25,14 +25,15 @@
 
 <body>
 	<header class="header">
+		<nav class="header__nav">
+			<a href="#info">Info</a><!--
+			--><a href="#services">Services</a><!--
+			--><a href="#testimonials">Testimonials</a><!--
+			--><a href="#contact">Contact</a>
+		</nav>
 		<div class="container">
 
-			<nav class="header__nav">
-				<a href="#info">Info</a><!--
-				--><a href="#services">Services</a><!--
-				--><a href="#testimonials">Testimonials</a><!--
-				--><a href="#contact">Contact</a>
-			</nav>
+			
 
 			<div class="wrapper row">
 				<div class="half-column half-column--left">
@@ -45,7 +46,7 @@
 		</div>
 	</header>
 
-	<section class="section section--info">
+	<section class="section section--info" id="info">
 		<div class="container">
 			<div class="wrapper row">
 				<h2 class="section__title">Info</h2>
@@ -59,7 +60,7 @@
 		</div>
 	</section>
 
-	<section class="section section--services">
+	<section class="section section--services" id="services">
 		<div class="container">
 			<div class="wrapper row">
 				<h2 class="section__title">Services</h2>

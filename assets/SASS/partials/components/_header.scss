@@ -6,16 +6,26 @@
 		background-color: $col-nav-bg;
 		border: 1px solid $col-nav-border;
 		border-top-width: 0;
+		border-bottom-width: 0;
 		margin: 0 auto 20px auto;
-		padding: 11px 62px;
-		width: 542px;
+		@include breakpoint(medium) {
+			border-bottom-width: 1px;
+			padding: 11px 62px;
+			width: 542px;
+		}
 		a {
+			border-bottom: 1px solid $col-nav-border;
 			color: $col-nav-link;
-			display: inline-block;
+			display: block;
 			font-family: $header-font-family;
 			font-size: 0.9em;
 			padding: 15px;
+			text-align: center;
 			text-transform: uppercase;
+			@include breakpoint(medium) {
+				border-bottom: 0;
+				display: inline-block;
+			}
 		}
 	}
 
