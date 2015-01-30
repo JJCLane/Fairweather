@@ -7,6 +7,8 @@ $col-alto: #dbd9d9;
 $col-fuscous-gray: #545041;
 $col-dove-gray: #636363;
 $col-mine-shaft: #333333;
+$col-chelsea-cucumber: #6BA74A;
+$col-hippie-green: #5F8B46;
 
 $col-standard: $col-mine-shaft;
 $col-heading: $col-dove-gray;
@@ -23,7 +25,14 @@ $col-nav-border: $col-alto;
 $col-nav-link: $col-fuscous-gray;
 
 // Sections
-$col-section-services: $col-alabaster;
+$col-section-alt-bg: $col-alabaster;
+
+// List box
+$col-listbox-border: $col-alto;
+$col-listbox-heading-bg-spring: $col-chelsea-cucumber;
+$col-listbox-heading-bg-summer: $col-hippie-green;
+$col-listbox-heading: $col-white;
+
 
 
 /* WEIGHTS

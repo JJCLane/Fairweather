@@ -1,0 +1,68 @@
+.list-box {
+	border-radius: 5px;
+	border: 1px solid $col-listbox-border;
+	padding-bottom: 50px;
+	position: relative;
+	margin-bottom: 55px;
+	@include breakpoint(medium) {
+		float: left;
+		width: 49%;
+	}
+	&--left {
+		@include breakpoint(medium) {
+			margin-right: 1%;
+		}
+	}
+	&--right {
+		@include breakpoint(medium) {
+			margin-left: 1%;
+		}
+	}
+	&__title {
+		background-color: $col-listbox-heading-bg-spring;
+		border-radius: 3px;
+		color: $col-listbox-heading;
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 14px 0px;
+	}
+	&__items {
+		margin: 30px auto;
+		max-width: 90%;
+		overflow: hidden;
+		li {
+			@include breakpoint(medium) {
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+	&__icon {
+		@include vector-image('/img/light-green-leaf.svg', '/img/light-green-leaf.png');
+		background-color: $col-section-alt-bg;
+		background-size: 50%;
+		border: 1px solid $col-listbox-border;
+		border-radius: 50px;
+		bottom: -50px;
+		left: 0;
+		height: 100px;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		width: 100px;
+	}
+
+	&--summer {
+		.list-box {
+			&__title {
+				background-color: $col-listbox-heading-bg-summer;
+			}
+			&__icon {
+				@include vector-image('/img/dark-green-leaf.svg', '/img/dark-green-leaf.png');
+				background-color: $col-section-alt-bg;
+				background-size: 50%;
+			}
+		}
+	}
+}
