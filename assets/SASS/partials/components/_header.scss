@@ -45,6 +45,7 @@
 		@include breakpoint(medium) {
 			// Necessary important style to override javascript inline styling
 			display: block !important;
+			height: auto !important;
 		}
 	}
 
