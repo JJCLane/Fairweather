@@ -26,10 +26,13 @@
 <body>
 	<header class="header">
 		<nav class="header__nav">
-			<a href="#info">Info</a><!--
-			--><a href="#services">Services</a><!--
-			--><a href="#testimonials">Testimonials</a><!--
-			--><a href="#contact">Contact</a>
+			<a href="#toggle" id="toggleMenu">Menu</a><!--
+			--><div class="header__links"><!--
+				--><a href="#info">Info</a><!--
+				--><a href="#services">Services</a><!--
+				--><a href="#testimonials">Testimonials</a><!--
+				--><a href="#contact">Contact</a><!--
+			--></div>
 		</nav>
 		<div class="container">
 

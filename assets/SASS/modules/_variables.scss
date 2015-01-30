@@ -9,6 +9,7 @@ $col-dove-gray: #636363;
 $col-mine-shaft: #333333;
 $col-chelsea-cucumber: #6BA74A;
 $col-hippie-green: #5F8B46;
+$col-scorpion: #5d5d5d;
 
 $col-standard: $col-mine-shaft;
 $col-heading: $col-dove-gray;
@@ -21,8 +22,11 @@ $col-header-border: $col-alto;
 
 // Nav
 $col-nav-bg: $col-white;
+$col-nav-toggle-bg: $col-scorpion;
 $col-nav-border: $col-alto;
 $col-nav-link: $col-fuscous-gray;
+$col-nav-link-toggle: $col-white;
+
 
 // Sections
 $col-section-alt-bg: $col-alabaster;

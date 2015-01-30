@@ -1,15 +1,15 @@
 .header {
 	background-color: $col-header-bg;
-	border: 1px solid $col-header-border;
 	padding-bottom: 55px;
+	@include breakpoint(medium) {
+		border: 1px solid $col-header-border;
+	}
 	&__nav {
 		background-color: $col-nav-bg;
-		border: 1px solid $col-nav-border;
 		border-top-width: 0;
-		border-bottom-width: 0;
 		margin: 0 auto 20px auto;
 		@include breakpoint(medium) {
-			border-bottom-width: 1px;
+			border: 1px solid $col-nav-border;
 			padding: 11px 62px;
 			width: 542px;
 		}
@@ -26,6 +26,25 @@
 				border-bottom: 0;
 				display: inline-block;
 			}
+			&:hover, &:focus {
+				background-color: $col-nav-border;
+			}
+		}
+		#toggleMenu {
+			&.toggled {
+				background-color: $col-nav-toggle-bg;
+				color: $col-nav-link-toggle;
+			}
+			@include breakpoint(medium) {
+				display: none;
+			}
+		}
+	}
+	&__links {
+		display: none;
+		@include breakpoint(medium) {
+			// Necessary important style to override javascript inline styling
+			display: block !important;
 		}
 	}
 
