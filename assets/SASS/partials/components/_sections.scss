@@ -1,11 +1,15 @@
 .section {
+	padding: 2em 0;
+	@include breakpoint(medium) {
+		padding: 4em 0;
+	}
 	&--services {
-		background-color: $col-section-services;
+		background-color: $col-section-alt-bg;
 	}
 	&__title {
-		margin-top: 2em;
+		margin: 0 0 1.6em 0;
 		@include breakpoint(medium) {
-			margin-top: 4em;
+			margin: 0 0 2.3em 0;
 		}
 	}
 	&__subhead {
@@ -14,8 +18,31 @@
 		@include breakpoint(large) {
 			margin-left: auto;
 			margin-right: auto;
-			width: 78%;
+			width: 88%;
 		}
 		
+	}
+	&__images {
+		overflow: hidden;
+		@include breakpoint(medium) {
+			margin: 0 auto;
+			max-width: 750px;
+		}
+		li {
+			text-align: center;
+			@include breakpoint(32em) {
+				float: left;
+				padding: 10px;
+				width: 33%;
+			}
+		}
+		img {
+			opacity: 0.95;
+			transition: all 0.3s ease;
+			&:hover {
+				opacity: 1;
+				transform: scale(0.96);
+			}
+		}
 	}
 }
