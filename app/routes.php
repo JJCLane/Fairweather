@@ -1,7 +1,5 @@
 <?php
 
-use Fairweather\Repository;
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,12 +11,4 @@ use Fairweather\Repository;
 |
 */
 
-Route::get('/', function()
-{
-	
-	$facebookRepository = App::make('Fairweather\Repositories\FacebookRepository');
-
-	$data = array();
-	$data['photos'] = $facebookRepository->getPagePhotos();
-	return View::make('home', $data);
-});
+Route::get('/', 'HomeController@getIndex');

@@ -1,4 +1,5 @@
 <?php
+use Fairweather\Repository;
 
 class HomeController extends BaseController {
 
@@ -15,9 +16,14 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function getIndex()
 	{
-		return View::make('hello');
+			
+		$facebookRepository = App::make('Fairweather\Repositories\FacebookRepository');
+
+		$data = array();
+		$data['photos'] = $facebookRepository->getPageStatusPhotos();
+		return View::make('home', $data);
 	}
 
 }
