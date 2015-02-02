@@ -92,7 +92,7 @@
 				</div>
 
 				<div class="list-box list-box--summer list-box--right">
-					<h3 class="list-box__title">Spring Services</h3>
+					<h3 class="list-box__title">Summer Services</h3>
 					<ul class="list-box__items">
 						<li>- Mowing</li>
 						<li>- Shingled areas</li>
@@ -113,6 +113,23 @@
 					</ul>
 					<div class="list-box__icon"></div>
 				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section section--services" id="services">
+		<div class="container">
+			<div class="wrapper row">
+				<h2 class="section__title">Facebook</h2>
+				@foreach($photos as $photo)
+					<a href="{{$photo['link']}}" target="_blank">
+						<img src="{{$photo['source']}}" width="{{$photo['width']}}" height="{{$photo['height']}}" alt="{{$photo['message']}}"/>
+					</a>
+					<p>{{$photo['message']}}</p>
+				@endforeach
+				
+				
 			</div>
 
 		</div>
