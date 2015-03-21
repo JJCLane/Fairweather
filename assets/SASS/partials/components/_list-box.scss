@@ -32,9 +32,10 @@
 		max-width: 90%;
 		overflow: hidden;
 		li {
-			@include breakpoint(medium) {
-				float: left;
-				width: 50%;
+			float: left;
+			width: 50%;
+			&:nth-child(odd) {
+				padding-right: 10px;
 			}
 		}
 	}
