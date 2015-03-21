@@ -104,8 +104,12 @@ class FacebookRepository {
 		}
 
 		// Check if the call returned enough photos, if not repeat the requst with a bigger limit
-		if(count($photos) < $required) {
+		$count = count($photos);
+		if($count < $required) {
 			return $this->getPhotos($required, $limit + 5);
+		} else if ($count > $required) {
+			// If we have too many photos slice the required amount
+			$photos = array_slice($photos, 0, $required);
 		}
 
 		$photos = $this->getObjects($photos);
