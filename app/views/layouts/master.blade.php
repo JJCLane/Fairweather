@@ -12,7 +12,7 @@
 	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Noah - Stein IAS' Web Development Template</title>
+	<title>Fairweather Garden Services</title>
 	
 	<script>document.documentElement.className += ' advanced';</script>
 	
