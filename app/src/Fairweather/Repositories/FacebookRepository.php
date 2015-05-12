@@ -99,6 +99,11 @@ class FacebookRepository {
 				$photo = Array();
 				$photo['id'] = $post->getProperty('object_id');
 				$photo['message'] = $post->getProperty('message');
+				// If the post is a story then we need to store the likes as most people like
+				// the story and not the photo itself
+				if(!is_null($post->getProperty('story'))) {
+					$photo['likes'] = $post->getProperty('likes')->asArray();
+				}
 				array_push($photos, $photo);
 			}
 		}

@@ -122,13 +122,23 @@
 		<div class="container">
 			<div class="wrapper row">
 				<h2 class="section__title">Facebook</h2>
-				@foreach($photos as $photo)
-					<a href="{{$photo['link']}}" target="_blank">
-						<img src="{{$photo['source']}}" width="{{$photo['width']}}" height="{{$photo['height']}}" alt="{{$photo['message']}}"/>
-					</a>
-					<p>{{$photo['message']}}</p>
-				@endforeach
-				
+				<div class="list-image">
+					@foreach($photos as $photo)
+						<div class="list-image__item">
+							<a href="{{$photo['link']}}" target="_blank">
+								<div class="list-image__image-container u-r-corner" style="background-image: url({{$photo['source']}});">
+									<img src="{{$photo['source']}}" class="list-image__image u-r-corner" width="{{$photo['width']}}" height="{{$photo['height']}}"/>
+									@if(array_key_exists('likes', $photo))
+										<p class="list-image__likes u-r-corner">{{count($photo['likes']['data'])}}</p>
+									@endif
+								</div>
+							</a>
+							<div class="list-image__description">
+								<p>{{$photo['message']}}</p>
+							</div>
+						</div>
+					@endforeach
+				</div>
 				
 			</div>
 
