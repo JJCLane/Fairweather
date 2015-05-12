@@ -1,0 +1,47 @@
+.list-image {
+	&__item {
+		/*font-family: 'Montserrat', sans-serif;*/
+		margin: 70px auto;
+		padding: 10px;
+		width: 100%;
+		@include breakpoint(medium) {
+			float: left;
+			margin: 20px auto;
+			width: 33.33333333%;
+		}
+	}
+	&__image-container {
+		background-size: 0%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+		text-align: center;
+		position: relative;
+		@include breakpoint(medium) {
+			background-size: cover;
+			min-height: 200px;
+			overflow: hidden;
+		}
+	}
+	&__image {
+		display: inline;
+		@include breakpoint(medium) {
+			display: none;
+		}
+	}
+	&__likes {
+		color: $col-imagebox-like;
+		background-color: $col-imagebox-like-bg;
+		opacity: 1;
+		float: right;
+		padding: 0px 5px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&__description p{
+		font-size: 1.2em;
+	}
+
+}
