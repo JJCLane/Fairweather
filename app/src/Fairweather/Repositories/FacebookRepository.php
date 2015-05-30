@@ -98,7 +98,9 @@ class FacebookRepository {
 				// Get the photo and store it in array
 				$photo = Array();
 				$photo['id'] = $post->getProperty('object_id');
+				$photo['post_id'] = $this->parsePostId($post);
 				$photo['message'] = $post->getProperty('message');
+				$photo['updated_time'] = $post->getProperty('updated_time');
 				// If the post is a story then we need to store the likes as most people like
 				// the story and not the photo itself
 				if(!is_null($post->getProperty('story'))) {
@@ -132,6 +134,17 @@ class FacebookRepository {
 		});
 
 		return $photos;
+	}
+
+	private function parsePostId($post) {
+		$id = $post->getProperty('id');
+		// Find the position of the underscore
+		$underscorePos = strpos($id, "_");
+		// Remove the page id including the underscore to get post id
+		$postId = substr($id, $underscorePos + 1);
+
+		return $postId;
+
 	}
 
 

@@ -125,7 +125,7 @@
 				<div class="list-image">
 					@foreach($photos as $photo)
 						<div class="list-image__item">
-							<a href="{{$photo['link']}}" target="_blank">
+							<a href="https://www.facebook.com/permalink.php?story_fbid={{$photo['post_id']}}&id={{$facebookPageId}}" target="_blank">
 								<div class="list-image__image-container u-r-corner" style="background-image: url({{$photo['source']}});">
 									<img src="{{$photo['source']}}" class="list-image__image u-r-corner" width="{{$photo['width']}}" height="{{$photo['height']}}"/>
 									@if(array_key_exists('likes', $photo))

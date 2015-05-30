@@ -23,6 +23,7 @@ class HomeController extends BaseController {
 
 		$data = array();
 		$data['photos'] = $facebookRepository->getPageStatusPhotos();
+		$data['facebookPageId'] = Config::get('services.facebook.pageId');
 		return View::make('home', $data);
 	}
 
