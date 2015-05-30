@@ -118,7 +118,7 @@
 		</div>
 	</section>
 
-	<section class="section section--services" id="services">
+	<section class="section section--facebook" id="facebook">
 		<div class="container">
 			<div class="wrapper row">
 				<h2 class="section__title">Facebook</h2>
@@ -139,7 +139,20 @@
 						</div>
 					@endforeach
 				</div>
+
+				<div class="cta">
+					<a href="https://www.facebook.com/pages/Fairweather-Garden-Services/1441025676167565" class="cta__button u-r-corner" title="Read more on Facebook">Visit Our Facebook</a>
+				</div>
 				
+			</div>
+
+		</div>
+	</section>
+
+	<section class="section section--testimonials" id="testimonials">
+		<div class="container">
+			<div class="wrapper row">
+				<h2 class="section__title">Testimonials</h2>				
 			</div>
 
 		</div>

@@ -2,6 +2,7 @@
 ------------------------------------------ */
 
 $col-white: #ffffff;
+$col-black: #000000;
 $col-alabaster: #fafafa;
 $col-alto: #dbd9d9;
 $col-fuscous-gray: #545041;
@@ -10,11 +11,19 @@ $col-mine-shaft: #333333;
 $col-chelsea-cucumber: #6BA74A;
 $col-hippie-green: #5F8B46;
 $col-scorpion: #5d5d5d;
+$col-chambray: #3B5998;
+$col-golden-grass: #E2A72F;
 
 $col-standard: $col-mine-shaft;
 $col-heading: $col-dove-gray;
-$col-link: $col-alto;
+$col-link: $col-chambray;
 $col-link-hover: $col-alto;
+
+// Global Blocks
+$col-cta-button: $col-white;
+$col-cta-button-bg: $col-chambray;
+$col-cta-button-hover: $col-golden-grass;
+$col-cta-button-active: $col-black;
 
 //Header
 $col-header-bg: $col-alabaster;
@@ -64,3 +73,5 @@ $base-line-height: 1.4;
 ------------------------------------------ */
 
 $header-font-family: 'Montserrat', sans-serif;
+
+$cta-font-family: 'Montserrat', sans-serif;

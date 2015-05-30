@@ -1,0 +1,21 @@
+.cta {
+	text-align: center;
+	&__button {
+		background-color: $col-cta-button-bg;
+		color: $col-cta-button;
+		display: inline;
+		font-family: $cta-font-family;
+		font-size: 1.25em;
+		line-height: 95px;
+		padding: 28px 60px;
+		text-transform: uppercase;
+		transition: all 0.2s ease;
+		&:hover {
+			box-shadow: 0px 0px 10px $col-cta-button-bg;
+			color: $col-cta-button-hover;
+		}
+		&:active {
+			box-shadow: 0px 0px 10px $col-cta-button-active inset;
+		}
+	}
+}
