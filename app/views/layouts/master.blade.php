@@ -65,53 +65,39 @@
 
 	<section class="section section--services" id="services">
 		<div class="container">
-			<div class="wrapper row">
+			<div class="wrapper">
 				<h2 class="section__title">Services</h2>
-				
-				<div class="list-box list-box--spring list-box--left">
-					<h3 class="list-box__title">Spring Services</h3>
-					<ul class="list-box__items">
-						<li>- Mowing</li>
-						<li>- Shingled areas</li>
-						<li>- Gutter clearance</li>
-						<li>- Hedge cutting</li>
-						<li>- Strimming</li>
-						<li>- Patio washing</li>
-						<li>- Tree surgery</li>
-						<li>- Turfing</li>
-						<li>- Mowing</li>
-						<li>- Shingled areas</li>
-						<li>- Gutter clearance</li>
-						<li>- Hedge cutting</li>
-						<li>- Strimming</li>
-						<li>- Patio washing</li>
-						<li>- Tree surgery</li>
-						<li>- Turfing</li>
-					</ul>
-					<div class="list-box__icon"></div>
-				</div>
 
-				<div class="list-box list-box--summer list-box--right">
-					<h3 class="list-box__title">Summer Services</h3>
-					<ul class="list-box__items">
-						<li>- Mowing</li>
-						<li>- Shingled areas</li>
-						<li>- Gutter clearance</li>
-						<li>- Hedge cutting</li>
-						<li>- Strimming</li>
-						<li>- Patio washing</li>
-						<li>- Tree surgery</li>
-						<li>- Turfing</li>
-						<li>- Mowing</li>
-						<li>- Shingled areas</li>
-						<li>- Gutter clearance</li>
-						<li>- Hedge cutting</li>
-						<li>- Strimming</li>
-						<li>- Patio washing</li>
-						<li>- Tree surgery</li>
-						<li>- Turfing</li>
-					</ul>
-					<div class="list-box__icon"></div>
+				<div class="list-box-table">
+					<div class="list-box list-box--spring list-box--left">
+						<h3 class="list-box__title">Spring Services</h3>
+						<ul class="list-box__items">
+							<li>- Garden Maintenance</li>
+							<li>- Hedges</li>
+							<li>- Planting</li>
+							<li>- Garden Clearance</li>
+							<li>- Patios</li>
+							<li>- Log chopping</li>
+							<li>- Tree surgery</li>
+							<li>- Shed Repair</li>
+						</ul>
+						<div class="list-box__icon"></div>
+					</div>
+
+					<div class="list-box list-box--summer list-box--right">
+						<h3 class="list-box__title">Summer Services</h3>
+						<ul class="list-box__items">
+							<li>- Lawns</li>
+							<li>- Topiary</li>
+							<li>- Gutter clearance</li>
+							<li>- Hedge cutting</li>
+							<li>- Landscaping</li>
+							<li>- Garden clearance</li>
+							<li>- Turfing</li>
+							<li>- Shed Repair</li>
+						</ul>
+						<div class="list-box__icon"></div>
+					</div>
 				</div>
 			</div>
 
