@@ -137,6 +137,7 @@
 								</div>
 							</a>
 							<div class="list-image__description">
+								<h3>{{Carbon\Carbon::parse($photo['updated_time'])->format('jS F \\a\\t H:i A')}}</h3>
 								<p>{{$photo['message']}}</p>
 							</div>
 						</div>
