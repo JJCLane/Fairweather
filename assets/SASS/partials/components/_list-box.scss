@@ -1,21 +1,18 @@
+.list-box-table {
+	@include breakpoint(medium) {
+		border-spacing: 20px 0;
+		display: table;
+		margin: 0px -20px;
+	}
+}
 .list-box {
 	border-radius: 5px;
 	border: 1px solid $col-listbox-border;
 	position: relative;
 	margin-bottom: 55px;
 	@include breakpoint(medium) {
-		float: left;
-		width: 49%;
-	}
-	&--left {
-		@include breakpoint(medium) {
-			margin-right: 1%;
-		}
-	}
-	&--right {
-		@include breakpoint(medium) {
-			margin-left: 1%;
-		}
+		display: table-cell;
+		width: 50%;
 	}
 	&--summer {
 		.list-box {
@@ -68,6 +65,32 @@
 		position: absolute;
 		right: 0;
 		width: 100px;
+	}
+
+	&__rating-list {
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	&__rating {
+		display: inline-block;
+		width: 25px;
+	}
+
+	&__text {
+		font-size: 1.35em;
+  		margin: 40px auto 0 auto;
+  		text-align: center;
+		width: 89%;
+	}
+
+	&__footer {
+		color: $col-listbox-footer;
+		font-family: $header-font-family;
+		font-size: 1em;
+		margin: 50px 0 40px 0;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 }

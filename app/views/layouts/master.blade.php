@@ -69,7 +69,7 @@
 				<h2 class="section__title">Services</h2>
 
 				<div class="list-box-table">
-					<div class="list-box list-box--spring list-box--left">
+					<div class="list-box list-box--spring">
 						<h3 class="list-box__title">Spring Services</h3>
 						<ul class="list-box__items">
 							<li>- Garden Maintenance</li>
@@ -84,7 +84,7 @@
 						<div class="list-box__icon"></div>
 					</div>
 
-					<div class="list-box list-box--summer list-box--right">
+					<div class="list-box list-box--summer">
 						<h3 class="list-box__title">Summer Services</h3>
 						<ul class="list-box__items">
 							<li>- Lawns</li>
@@ -142,7 +142,32 @@
 	<section class="section section--testimonials" id="testimonials">
 		<div class="container">
 			<div class="wrapper row">
-				<h2 class="section__title">Testimonials</h2>				
+				<h2 class="section__title">Testimonials</h2>
+
+				<div class="list-box-table">
+					<div class="list-box">
+						<ul class="list-box__rating-list">
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+						</ul>
+						<p class="list-box__text">Fantastic! Absolutely love my garden now and can't wait to sit out in the sunshine and enjoy it highly recommended</p>
+						<p class="list-box__footer">8th April 2015 | Macclesfield</p>
+					</div>
+					<div class="list-box">
+						<ul class="list-box__rating-list">
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+							<li class="list-box__rating"><img src="/img/gray-leaf.svg"/></li>
+						</ul>
+						<p class="list-box__text">Brilliant service and very friendly would 100% recommend</p>
+						<p class="list-box__footer">30th June 2014 | Macclesfield</p>
+					</div>
+				</div>
 			</div>
 
 		</div>
