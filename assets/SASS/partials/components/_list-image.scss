@@ -57,7 +57,11 @@
   		margin-bottom: 0;
 	}
 
-	&__description p{
+	&__date {
+		text-align: center;
+	}
+	
+	&__message{
 		font-size: 1.2em;
 	}
 
