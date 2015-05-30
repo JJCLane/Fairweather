@@ -28,4 +28,10 @@ return array(
 		'secret' => '',
 	),
 
+	'facebook' => array(
+		'pageId' => '1441025676167565',
+		'appId' => '315006852031986',
+		'appSecret' => 'Et4dPA0rJeZ1aSx98M9p-4RXxUM'
+	)
+
 );
