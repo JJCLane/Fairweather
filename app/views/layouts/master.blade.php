@@ -129,7 +129,10 @@
 								<div class="list-image__image-container u-r-corner" style="background-image: url({{$photo['source']}});">
 									<img src="{{$photo['source']}}" class="list-image__image u-r-corner" width="{{$photo['width']}}" height="{{$photo['height']}}"/>
 									@if(array_key_exists('likes', $photo))
-										<p class="list-image__likes u-r-corner">{{count($photo['likes']['data'])}}</p>
+										<div class="list-image__likes u-r-corner">
+											<img src="/img/facebook-thumb.svg" class="list-image__likes-image"/>
+											<p class="list-image__likes-text">{{count($photo['likes']['data'])}}</p>
+										</div>
 									@endif
 								</div>
 							</a>

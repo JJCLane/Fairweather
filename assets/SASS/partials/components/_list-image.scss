@@ -31,7 +31,6 @@
 		}
 	}
 	&__likes {
-		color: $col-imagebox-like;
 		background-color: $col-imagebox-like-bg;
 		opacity: 1;
 		float: right;
@@ -39,6 +38,21 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+	}
+
+	&__likes-image {
+		float: left;
+		margin: 2px 5px 5px 0;
+		width: 25px;
+		@include breakpoint(medium) {
+			margin-top: 9px;
+		}
+	}
+
+	&__likes-text {
+		color: $col-imagebox-like;
+		float: right;
+  		margin-bottom: 0;
 	}
 
 	&__description p{
