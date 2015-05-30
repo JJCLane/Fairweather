@@ -170,6 +170,10 @@
 				</div>
 			</div>
 
+			<div class="cta">
+				<a href="https://www.facebook.com/pages/Fairweather-Garden-Services/1441025676167565?sk=reviews" class="cta__button u-r-corner" title="Read all our testimonials">All Testimonials</a>
+			</div>
+
 		</div>
 	</section>
 
