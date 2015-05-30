@@ -3,7 +3,8 @@
 	@include breakpoint(medium) {
 		padding: 4em 0;
 	}
-	&--services {
+	&--services,
+	&--testimonials {
 		background-color: $col-section-alt-bg;
 	}
 	&__title {
@@ -34,14 +35,6 @@
 				float: left;
 				padding: 10px;
 				width: 33%;
-			}
-		}
-		img {
-			opacity: 0.95;
-			transition: all 0.3s ease;
-			&:hover {
-				opacity: 1;
-				transform: scale(0.96);
 			}
 		}
 	}
