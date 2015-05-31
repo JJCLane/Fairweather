@@ -22,6 +22,7 @@
 			padding: 15px;
 			text-align: center;
 			text-transform: uppercase;
+			transition: background-color 0.2s ease;
 			@include breakpoint(medium) {
 				border-bottom: 0;
 				display: inline-block;
