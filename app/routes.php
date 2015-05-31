@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@getIndex');
+
+Route::post('/', array('before' => 'csrf', 'uses' => 'ContactController@postEnquiry'));

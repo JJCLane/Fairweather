@@ -193,27 +193,36 @@
 					<p class="contact-details__info"><a href="callto:+447851171073">07851 171 073</a></p>
 			    </div>
 
-
-			    {{ Form::open(array('class' => 'contact-form')) }}
-					<div class="input contact-form__left">
-						<input class="input__field" type="text" id="name" name="name" required> 
-						<label class="input__label" for="name">
-							<span class="input__label-content" data-content="Name">Name</span> 
-						</label>
-					</div><!--
-					--><div class="input contact-form__right">
-						<input class="input__field" type="tel" id="number" name="number" required> 
-						<label class="input__label" for="number">
-							<span class="input__label-content" data-content="Number">Number</span> 
-						</label>
-					</div>
-					<div class="input">
-						<textarea class="input__field" type="tel" id="enquiry" name="enquiry" required></textarea>
-						<label class="input__label" for="enquiry">
-							<span class="input__label-content" data-content="Enquiry">Enquiry</span> 
-						</label>
-					</div>
-					<input type="submit" class="contact-form__submit u-r-corner">
+			    {{ Form::open(array('class' => 'contact-form', 'id' => 'contact-form')) }}
+				    @if(Session::has('success'))
+				    	<p>{{Session::get('success')}}</p>
+				    @else
+					    
+							<div class="input contact-form__left">
+								<input class="input__field" type="text" id="name" name="name" required> 
+								<label class="input__label" for="name">
+									<span class="input__label-content" data-content="Name">Name</span> 
+								</label>
+							</div><!--
+							--><div class="input contact-form__right">
+								<input class="input__field" type="tel" id="number" name="number" required> 
+								<label class="input__label" for="number">
+									<span class="input__label-content" data-content="Number">Number</span> 
+								</label>
+							</div>
+							<div class="input">
+								<textarea class="input__field" type="tel" id="enquiry" name="enquiry" required></textarea>
+								<label class="input__label" for="enquiry">
+									<span class="input__label-content" data-content="Enquiry">Enquiry</span> 
+								</label>
+							</div>
+							@foreach($errors->getmessages() as $messages) 
+					    		@foreach($messages as $message)
+					    			<p class="contact-form__error">{{$message}}</p>
+					    		@endforeach
+					   		@endforeach
+							<input type="submit" class="contact-form__submit u-r-corner">
+					@endif
 				{{ Form::close() }}
 			</div>
 		</div>

@@ -44,6 +44,11 @@
 		}
 	}
 
+	&__error {
+		color: $col-contact-form-error;
+		font-size: 1.2em;
+	}
+
 	&__submit {
 		@include breakpoint(medium) {
 			float: right;
