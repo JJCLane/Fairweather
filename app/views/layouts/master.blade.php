@@ -182,27 +182,39 @@
 			<div class="wrapper row">
 				<h2 class="section__title">Contact</h2>
 
-				<form class="contact-form">
+				<div class="contact-details">
+					<span class="icon-location contact-details__icon"></span>
+					<p class="contact-details__info">9 Cambridge Avenue<br>Macclesfield<br>SK11 8JN</p>
+
+					<span class="icon-envelope contact-details__icon"></span>
+					<p class="contact-details__info"><a href="mailto:contact@fairweathergardenservices.co.uk" class="contact-details__email">contact@<br>fairweathergardenservices.co.uk</a></p>
+
+					<span class="icon-phone contact-details__icon"></span>
+					<p class="contact-details__info"><a href="callto:+447851171073">07851 171 073</a></p>
+			    </div>
+
+
+			    {{ Form::open(array('class' => 'contact-form')) }}
 					<div class="input contact-form__left">
-						<input class="input__field" type="text" id="name" required> 
+						<input class="input__field" type="text" id="name" name="name" required> 
 						<label class="input__label" for="name">
 							<span class="input__label-content" data-content="Name">Name</span> 
 						</label>
 					</div><!--
 					--><div class="input contact-form__right">
-						<input class="input__field" type="tel" id="number" required> 
+						<input class="input__field" type="tel" id="number" name="number" required> 
 						<label class="input__label" for="number">
 							<span class="input__label-content" data-content="Number">Number</span> 
 						</label>
 					</div>
 					<div class="input">
-						<textarea class="input__field" type="tel" id="enquiry" required></textarea>
+						<textarea class="input__field" type="tel" id="enquiry" name="enquiry" required></textarea>
 						<label class="input__label" for="enquiry">
 							<span class="input__label-content" data-content="Enquiry">Enquiry</span> 
 						</label>
 					</div>
 					<input type="submit" class="contact-form__submit u-r-corner">
-				</form>
+				{{ Form::close() }}
 			</div>
 		</div>
 	</section>

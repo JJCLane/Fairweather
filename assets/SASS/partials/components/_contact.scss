@@ -1,0 +1,53 @@
+.contact-details {
+	margin-bottom: 50px;
+	overflow: hidden;
+	@include breakpoint(medium) {
+		float: left;
+		width: 49%;
+	}
+	&__icon {
+		clear: both;
+		display: block;
+		float: left;
+		font-size: 32px;
+		margin-right: 10px;
+	}
+	&__info {
+		color: $col-contact-details;
+		float: left;
+		font-family: $header-font-family;
+		font-size: 1.1em;
+		text-transform: uppercase;
+		width: 85%;
+	}
+	&__email {
+		word-wrap: break-word;
+	}
+}
+
+.contact-form {
+	@include breakpoint(medium) {
+		float: right;
+		width: 49%;
+	}
+
+	&__left,
+	&__right {
+		@include breakpoint(medium) {
+			width: 49%;
+		}
+	}
+
+	&__left {
+		@include breakpoint(medium) {
+			margin-right: 2%;
+		}
+	}
+
+	&__submit {
+		@include breakpoint(medium) {
+			float: right;
+			width: 35%
+		}
+	}
+}
