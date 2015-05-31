@@ -103,7 +103,7 @@ class FacebookRepository {
 				$photo['updated_time'] = $post->getProperty('updated_time');
 				// If the post is a story then we need to store the likes as most people like
 				// the story and not the photo itself
-				if(!is_null($post->getProperty('story'))) {
+				if(!is_null($post->getProperty('story')) && !is_null($post->getProperty('likes'))) {
 					$photo['likes'] = $post->getProperty('likes')->asArray();
 				}
 				array_push($photos, $photo);
