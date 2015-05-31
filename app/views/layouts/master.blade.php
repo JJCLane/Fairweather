@@ -201,7 +201,7 @@
 							<span class="input__label-content" data-content="Enquiry">Enquiry</span> 
 						</label>
 					</div>
-					<input type="submit" class="u-r-corner">
+					<input type="submit" class="contact-form__submit u-r-corner">
 				</form>
 			</div>
 		</div>

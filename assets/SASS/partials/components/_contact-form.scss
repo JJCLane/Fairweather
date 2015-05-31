@@ -16,4 +16,11 @@
 			margin-right: 2%;
 		}
 	}
+
+	&__submit {
+		@include breakpoint(medium) {
+			float: right;
+			width: 35%
+		}
+	}
 }
