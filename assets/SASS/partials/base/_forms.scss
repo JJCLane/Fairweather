@@ -1,12 +1,116 @@
 input, 
 textarea {
+	font-family: "Neuton", serif;
+	font-size: 1.1em;
 	margin: 0 0 1em;
 	outline: none;
 	padding: 1em;
 	width: 100%;
+	max-width: 100%;
 }
 
 input[type=submit] {
 	border: none;
 }
 	
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin-bottom: 35px;
+	width: 100%;
+	vertical-align: top;
+}
+
+.input__field {
+	background-color: #d0d1d0;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	color: #aaa;
+	display: block;
+	float: right;
+	font-weight: 400;
+	padding: 0.8em;
+	position: relative;
+	transition: background-color 0.25s, border-color 0.25s;
+	-webkit-transition: background-color 0.25s, border-color 0.25s;
+	width: 100%;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	color: #696969;
+	display: inline-block;
+	float: right;
+	font-size: 1.5em;
+	padding: 0 0.7em;
+	pointer-events: none;
+	position: absolute;
+	text-align: left;
+	top: -2.4em;
+	overflow: hidden;
+	width: 100%;
+	-webkit-transform: translate3d(0, 2.5em, 0);
+	transform: translate3d(0, 2.5em, 0);
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: transform 0.25s ;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	color: #8B8C8B;
+	display: block;
+	padding: 0.25em 0;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: transform 0.25s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	width: 100%;
+}
+
+.input__label-content::after {
+	content: attr(data-content);
+	position: absolute;
+	bottom: 75%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #6BA74A;
+	padding: 0.25em 0;
+	font-size: 0.85em;
+}
+
+
+.input__field:focus + .input__label,
+.input--filled .input__label {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.input__field:focus + .input__label .input__label-content,
+.input--filled .input__label-content {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+.input__field:focus + .input__field,
+.input--filled .input__field {
+	background-color: #fafafa;
+	border-color: #dbd9d9;
+}
+

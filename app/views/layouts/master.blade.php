@@ -177,6 +177,36 @@
 		</div>
 	</section>
 
+	<section class="section section--contact" id="contact">
+		<div class="container">
+			<div class="wrapper row">
+				<h2 class="section__title">Contact</h2>
+
+				<form class="contact-form">
+					<div class="input contact-form__left">
+						<input class="input__field" type="text" id="name" required> 
+						<label class="input__label" for="name">
+							<span class="input__label-content" data-content="Name">Name</span> 
+						</label>
+					</div><!--
+					--><div class="input contact-form__right">
+						<input class="input__field" type="tel" id="number" required> 
+						<label class="input__label" for="number">
+							<span class="input__label-content" data-content="Number">Number</span> 
+						</label>
+					</div>
+					<div class="input">
+						<textarea class="input__field" type="tel" id="enquiry" required></textarea>
+						<label class="input__label" for="enquiry">
+							<span class="input__label-content" data-content="Enquiry">Enquiry</span> 
+						</label>
+					</div>
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+	</section>
+
    
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.11.1.min.js"><\/script>')</script>

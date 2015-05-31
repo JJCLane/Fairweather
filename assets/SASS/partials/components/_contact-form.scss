@@ -1,0 +1,19 @@
+.contact-form {
+	@include breakpoint(medium) {
+		float: right;
+		width: 49%;
+	}
+
+	&__left,
+	&__right {
+		@include breakpoint(medium) {
+			width: 49%;
+		}
+	}
+
+	&__left {
+		@include breakpoint(medium) {
+			margin-right: 2%;
+		}
+	}
+}
