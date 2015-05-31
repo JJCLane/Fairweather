@@ -3,13 +3,17 @@
 	&__button {
 		background-color: $col-cta-button-bg;
 		color: $col-cta-button;
-		display: inline;
+		display: inline-block;
 		font-family: $cta-font-family;
 		font-size: 1.25em;
-		line-height: 95px;
-		padding: 28px 60px;
+		padding: 25px 45px;
 		text-transform: uppercase;
 		transition: all 0.2s ease;
+		@include breakpoint(medium) {
+			display: inline;
+			line-height: 95px;
+			padding: 28px 60px;
+		}
 		&:hover {
 			box-shadow: 0px 0px 10px $col-cta-button-bg;
 			color: $col-cta-button-hover;
