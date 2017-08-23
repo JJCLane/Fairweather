@@ -38,12 +38,16 @@ class FacebookRepository {
 	}
 
 	public function getPagePosts($limit = 5) {
+		try {
+			$request = new FacebookRequest($this->session, 'GET', '/' . $this->facebookPageId . '/posts?fields=id,object_id,message,updated_time,type,status_type,story&limit=' . $limit);
+			$response = $request->execute();
+			$graphObject = $response->getGraphObject();
+		} catch (Exception $e) {
 
-		$request = new FacebookRequest($this->session, 'GET', '/' . $this->facebookPageId . '/posts?limit=' . $limit);
-		$response = $request->execute();
-		$graphObject = $response->getGraphObject();
+		}
+
 		return $graphObject;
-		
+
 	}
 
 	private function getObjects($objects) {
@@ -52,7 +56,7 @@ class FacebookRepository {
 		foreach ($objects as $object) {
 			$param = [
 				"method" => "GET",
-				"relative_url" => "/" . $object['id']
+				"relative_url" => "/" . $object['id'] . "?fields=picture,images,link,likes,width,height"
 			];
 			array_push($params, $param);
 		}
@@ -78,7 +82,7 @@ class FacebookRepository {
 		}
 
 		return $objects;
-		
+
 	}
 
 	/**
@@ -93,7 +97,6 @@ class FacebookRepository {
 		$photos = array();
 
 		foreach ($posts->getPropertyAsArray('data') as $post) {
-
 			if($post->getProperty('type') === 'photo') {
 				// Get the photo and store it in array
 				$photo = Array();
@@ -111,7 +114,9 @@ class FacebookRepository {
 		}
 
 		// Check if the call returned enough photos, if not repeat the requst with a bigger limit
+		//dd($photos);
 		$count = count($photos);
+
 		if($count < $required) {
 			return $this->getPhotos($required, $limit + 5);
 		} else if ($count > $required) {
@@ -120,7 +125,6 @@ class FacebookRepository {
 		}
 
 		$photos = $this->getObjects($photos);
-
 		return $photos;
 
 	}

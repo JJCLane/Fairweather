@@ -5,17 +5,17 @@
 <!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
- 
+
 <head>
-	
+
 	<meta charset="utf-8">
-	
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+
 	<title>Fairweather Garden Services</title>
-	
+
 	<script>document.documentElement.className += ' advanced';</script>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="/css/style.css" media="screen">
@@ -54,7 +54,7 @@
 		</nav>
 		<div class="container">
 
-			
+
 
 			<div class="wrapper row">
 				<div class="half-column half-column--left">
@@ -130,8 +130,8 @@
 					@foreach($photos as $photo)
 						<div class="list-image__item">
 							<a href="https://www.facebook.com/permalink.php?story_fbid={{$photo['post_id']}}&id={{$facebookPageId}}" target="_blank">
-								<div class="list-image__image-container u-r-corner" style="background-image: url({{$photo['source']}});">
-									<img src="{{$photo['source']}}" class="list-image__image u-r-corner" width="{{$photo['width']}}" height="{{$photo['height']}}"/>
+								<div class="list-image__image-container u-r-corner" style="background-image: url({{$photo['images'][2]['source']}});">
+									<img src="{{$photo['images'][2]['source']}}" class="list-image__image u-r-corner" width="{{$photo['images'][2]['width']}}" height="{{$photo['images'][2]['height']}}"/>
 									@if(array_key_exists('likes', $photo))
 										<div class="list-image__likes">
 											<img src="/img/facebook-thumb.svg" class="list-image__likes-image"/>
@@ -151,7 +151,7 @@
 				<div class="cta">
 					<a href="https://www.facebook.com/pages/Fairweather-Garden-Services/1441025676167565" class="cta__button u-r-corner" title="Read more on Facebook">Visit Our Facebook</a>
 				</div>
-				
+
 			</div>
 
 		</div>
@@ -215,26 +215,26 @@
 				    @if(Session::has('success'))
 				    	<p>{{Session::get('success')}}</p>
 				    @else
-					    
+
 							<div class="input contact-form__left">
-								<input class="input__field" type="text" id="name" name="name" required> 
+								<input class="input__field" type="text" id="name" name="name" required>
 								<label class="input__label" for="name">
-									<span class="input__label-content" data-content="Name">Name</span> 
+									<span class="input__label-content" data-content="Name">Name</span>
 								</label>
 							</div><!--
 							--><div class="input contact-form__right">
-								<input class="input__field" type="tel" id="number" name="number" required> 
+								<input class="input__field" type="tel" id="number" name="number" required>
 								<label class="input__label" for="number">
-									<span class="input__label-content" data-content="Number">Number</span> 
+									<span class="input__label-content" data-content="Number">Number</span>
 								</label>
 							</div>
 							<div class="input">
 								<textarea class="input__field" type="tel" id="enquiry" name="enquiry" required></textarea>
 								<label class="input__label" for="enquiry">
-									<span class="input__label-content" data-content="Enquiry">Enquiry</span> 
+									<span class="input__label-content" data-content="Enquiry">Enquiry</span>
 								</label>
 							</div>
-							@foreach($errors->getmessages() as $messages) 
+							@foreach($errors->getmessages() as $messages)
 					    		@foreach($messages as $message)
 					    			<p class="contact-form__error">{{$message}}</p>
 					    		@endforeach
@@ -246,7 +246,7 @@
 		</div>
 	</section>
 
-   
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.11.1.min.js"><\/script>')</script>
 	<script src="js/script.js"></script>
@@ -255,7 +255,7 @@
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
+
 	  ga('create', 'UA-63588797-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
